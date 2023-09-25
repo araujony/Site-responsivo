@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* respeitar limites e dimensões escolhidas */
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+    line-height: 4rem;
+    background-color: #19bd1f;
+
+    text-transform: capitalize;
+    margin: 2rem 0 2rem 0;
+
+    letter-spacing: .2rem;
+}
+
+.col {
+    width: 30vw;
+    float: left;
+    margin: 0 .5rem ;
+}
+
+.col:hover {
+    box-shadow: 0 0 20px 1px #fff;
+}
+
+.price-box {
+    color: #333;   
+    list-style-type: none;
+
+    background-color: #fff;
+}
+
+.price-box .header {
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #111;
+}
+
+.price-box li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 20px solid #d6d6d6;
+}
+
+
+.header.header-green {
+    background-color: #19bd1f;
+}
+
+
+.price-box li a.btn {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    background-color: #19bd1f;
+}
+.price-box li a.btn:hover {
+    background-color: #3a7c3c;
+}
+
+@media(max-width: 768px) {
+    .col {
+        width: 100vw;
+    }
+    header {
+        background-color: #06fc0e;
+    }
+}
+
+@media(max-width: 576px) {
+    header {
+        line-height: 2.5rem;
+
+    }    
+    .price-box li a.btn {
+        font-size: 0.7rem;
+    }
+}
+
+@media print {
+    .col {
+        width: 100vw;
+    }
+    .price-box li a.btn {
+        display: none;
+    }
+    .price-box li {
+        padding: 10px 20px;
+        border-bottom: 10px solid #d6d6d6;
+    }
+}
